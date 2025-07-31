@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter Navbar </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav>
+    <div class="logo">Spotter</div>
+
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <div class="nav-item"><button onclick="location.href='index.html'">Home</button></div>
+      <div class="nav-item"><button onclick="location.href='https://spotter.ai/lens'">Lens</button></div>
+
+      <div class="nav-item dropdown-parent">
+        <button onclick="toggleDropdown(event)">TMS ▾</button>
+        <div class="dropdown">
+          <a href="https://dribbble.com/search/dashboard-filter">Filters Dashboard</a>
+          <a href="https://daniyalrana814.atlassian.net/wiki/spaces/~712020f051a7f2e3b249c6b76425034be8a912/pages/131170/Rana+s+task+list">Tasks</a>
+          <a href="https://calendar.google.com/calendar/u/0/r?pli=1">Calendar View</a>
+          <a href="https://www.visme.co/templates/reports/">Reports</a>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown-parent">
+        <button onclick="toggleDropdown(event)">Sentinal ▾</button>
+        <div class="dropdown">
+          <a href="https://www.google.com.pk/alerts">Alerts</a>
+          <a href="https://cloud.google.com/monitoring">Cloud Monitoring</a>
+          <a href="https://en.wikipedia.org/wiki/Business_rules_engine">Rules Engine</a>
+          <a href="https://cloud.google.com/logging/docs/audit">Audit Logs</a>
+        </div>
+      </div>
+
+      <div class="nav-item"><button onclick="location.href='https://extension.spotter.ai/'">Extension</button></div>
+      <div class="nav-item"><button onclick="location.href='https://spotter.ai/driversapp'">Spotter App</button></div>
+      <div class="nav-item"><button onclick="location.href='https://spotter.ai/loan-calculators'">Loan Calculators</button></div>
+      <div class="nav-item"><button onclick="location.href='https://spotter.ai/insights'">Insights</button></div>
+    </div>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>
